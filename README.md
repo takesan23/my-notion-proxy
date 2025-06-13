@@ -24,7 +24,6 @@ SaaS の API インフラ設計を想定し、以下の実務技術を取り入�
 | 認証方式         | OAuth 2.0 (Notion API)        |
 | データベース     | MySQL (Laravel Eloquent 使用) |
 | 監視通知         | Discord Webhook               |
-| インフラ         | Docker（※導入済みなら追記）   |
 | バージョン管理   | GitHub                        |
 
 ---
