@@ -125,6 +125,13 @@ app.post("/add-record", async (req, res) => {
           Day: { number: req.body.day },
           Summary: { title: [{ text: { content: req.body.summary } }] },
           Learned: { rich_text: [{ text: { content: req.body.learned } }] },
+          TechStack: { multi_select: req.body.techStack },
+          Phase: { select: { name: req.body.phase } },
+          ErrorLog: { rich_text: [{ text: { content: req.body.errorLog } }] },
+          MentalNote: {
+            rich_text: [{ text: { content: req.body.mentalNote } }],
+          },
+          Memo: { rich_text: [{ text: { content: req.body.memo } }] },
         },
       },
       {
